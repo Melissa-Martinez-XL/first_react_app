@@ -8,7 +8,7 @@ const InputElement = ({value, onChange }) => {
         onChange(value);
     }
 
-    return <input type='text' name='' value={value} onChange={handleChange} />;
+    return <input type='text' name='' value={value} onChange={handleChange} placeholder='Ingrese el estado'/>;
 }
 
 /*
