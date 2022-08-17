@@ -1,10 +1,23 @@
 import { string, array, func } from 'prop-types';  
+import { useEffect, useState } from 'react';
 
 import { Button } from './Button'; 
 
 // Componente Inicial
 
 const Buttons = ({status, statuses, onClick}) => {
+
+    const [disabledNext, setDisabledNext] = useState(false);
+    const [disabledBack, setDisabledBack] = useState(true);
+
+    useEffect(() => {
+        
+        const statusIndex = statuses.indexOf(status);
+
+        setDisabledBack(statusIndex === 0);
+        setDisabledNext(statusIndex === statuses.length -1)
+
+    }, [status]);
 
     // Funciones
     
@@ -24,28 +37,27 @@ const Buttons = ({status, statuses, onClick}) => {
 
     }
 
-    function disabledNext() {
+    // function disabledNext() {
 
-        const statusIndex = statuses.indexOf(status);
+    //     const statusIndex = statuses.indexOf(status);
 
-        return statusIndex === statuses.length -1;
+    //     return statusIndex === statuses.length -1;
 
-    }
+    // }
 
-    function disabledBack() {
+    // function disabledBack() {
 
-        const statusIndex = statuses.indexOf(status);
+    //     const statusIndex = statuses.indexOf(status);
 
-        return statusIndex === 0;
+    //     return statusIndex === 0;
 
-    }
+    // }
 
-    // Return - Revisar
-
+    // Return
     return (
         <>
-            <Button onClick={handleBack} disabled={disabledBack()} label="Retroceder estado" />
-            <Button onClick={handleNext} disabled={disabledNext()} label="Avanzar estado" />
+            <Button onClick={handleBack} disabled={disabledBack} label="Retroceder estado" />
+            <Button onClick={handleNext} disabled={disabledNext} label="Avanzar estado" />
         
         </>
     );
