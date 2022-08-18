@@ -1,4 +1,7 @@
 import { string } from "prop-types";
+import { Finalizado } from "./Finalizado";
+import { Procesando } from "./Procesando";
+import { Procesar } from "./Procesar";
 
 const Card = ({color, status}) => {
 
@@ -6,38 +9,15 @@ const Card = ({color, status}) => {
 
         if (status === 'procesar') {
 
-            return <p>Tiene una tarea por porcesar</p>;
+            return <Procesar />
         }
 
         if (status === 'procesando') {
 
-            const list = [
-                {title: 'HTML', id: 1},
-                {title: 'CSS', id: 2},
-                {title: 'JavaScript', id: 3},
-                {title: 'Java', id: 4},
-                {title: 'JSX', id: 5}
-            ];
-
-            const listItems = list.map (items =>
-                <li key={items.id}>
-                    {items.title}
-                </li>
-                );
-            
-            return (
-                <>
-                <p>Tareas:</p>
-                <ul>
-                    {listItems}
-                </ul>
-                <p>La tarea esta siendo procesada</p>
-                </>
-            );
-                
+           return <Procesando />                
         }
 
-        return <p>La tarea ha finalizado</p>;
+        return <Finalizado />
 
     }
 
