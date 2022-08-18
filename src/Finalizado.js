@@ -11,6 +11,6 @@ const Finalizado = (() => {
     });
 
     return <p>El proceso ha finalizado </p>
-});
+}, []);
 
 export { Finalizado };

@@ -37,6 +37,6 @@ const Procesando = (() => {
     });
 
     return list();
-});
+}, []);
 
 export { Procesando };
