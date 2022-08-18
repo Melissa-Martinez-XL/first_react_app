@@ -8,9 +8,9 @@ const Finalizado = (() => {
         return () => {
             console.log('Componente desmontado: Finalizado');
         }
-    });
+    }, []);
 
     return <p>El proceso ha finalizado </p>
-}, []);
+});
 
 export { Finalizado };
