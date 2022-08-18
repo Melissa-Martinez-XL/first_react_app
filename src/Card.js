@@ -1,6 +1,7 @@
 import { string } from "prop-types";
 
 const Card = ({color, status}) => {
+    //
 
     function showText () {
 
