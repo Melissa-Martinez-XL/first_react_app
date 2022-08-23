@@ -34,7 +34,7 @@ const Procesando = (() => {
         return () => {
             console.log('Componente desmontado: Procesando');
         }
-    });
+    }, []);
 
     return list();
 });

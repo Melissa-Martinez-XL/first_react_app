@@ -8,7 +8,7 @@ const Procesar = (() => {
         return () => {
             console.log('Componente desmontado: Procesar');
         }
-    });
+    }, []);
 
     return <p>Hay tareas para procesar</p>
 });
