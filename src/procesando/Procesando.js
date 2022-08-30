@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import styles from './procesando.module.scss';
 
 const Procesando = (() => {
 

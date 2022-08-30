@@ -2,7 +2,6 @@ import { InputElement } from "../inputElement/InputElement";
 import { func, array } from 'prop-types';
 import { useState } from "react";
 import { Button } from '../button/Button';
-import styles from './userInput.module.scss';
 
 const UserInput = ({changeStatus, status}) => {
 
