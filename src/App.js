@@ -1,9 +1,9 @@
 import './App.css';
 import { useState } from 'react';
 
-import { Buttons } from './Buttons'; 
-import { Card } from './Card';      
-import { UserInput } from './UserInput';
+import { Buttons } from './buttons/Buttons'; 
+import { Card } from './card/Card';      
+import { UserInput } from './userInput/UserInput';
 
 // Código cambiado
 
@@ -31,7 +31,7 @@ const App = () => {
   // Retorno - Revisar
 
   return (
-    <div style={{display: 'flex', flexDirection: 'column'}}>
+    <div className="container">
       <Card status={currentStatus} color={currentColor} />
       <Buttons status={currentStatus} statuses={statuses} onClick={handleClick} /> 
       <UserInput changeStatus={handleClick} status={statuses} />

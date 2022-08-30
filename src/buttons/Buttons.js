@@ -1,7 +1,7 @@
 import { string, array, func } from 'prop-types';  
 import { useEffect, useState } from 'react';
-
-import { Button } from './Button'; 
+import { Button } from '../button/Button'; 
+import styles from './button.module.scss'
 
 // Componente Inicial
 
@@ -55,11 +55,11 @@ const Buttons = ({status, statuses, onClick}) => {
 
     // Return
     return (
-        <>
+        <div className={styles.buttons}>
             <Button onClick={handleBack} disabled={disabledBack} label="Retroceder estado" />
             <Button onClick={handleNext} disabled={disabledNext} label="Avanzar estado" />
         
-        </>
+        </div>
     );
 
 } 

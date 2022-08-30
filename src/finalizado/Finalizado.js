@@ -1,4 +1,5 @@
 import { useEffect} from "react";
+import styles from './finalizado.module.scss';
 
 const Finalizado = (() => {
 

@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import styles from './procesar.module.scss';
 
 const Procesar = (() => {
 

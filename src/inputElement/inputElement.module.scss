@@ -1,0 +1,29 @@
+.inputBorder {
+    border-radius: 15px;
+    border: 2px solid #899EA6;
+}
+
+.inputText {
+    font-size: 14px;
+    color: #090B0B;
+}
+
+.inputPadding {
+    padding: 5px;
+}
+
+.inputWidth {
+    width: 330px;
+}
+
+.inputMargin {
+    margin: 10px;
+}
+
+.inputElement {
+    @extend .inputBorder;
+    @extend .inputText;
+    @extend .inputPadding;
+    @extend .inputWidth;
+    @extend .inputMargin;
+}

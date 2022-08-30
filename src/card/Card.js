@@ -1,7 +1,9 @@
 import { string } from "prop-types";
-import { Finalizado } from "./Finalizado";
-import { Procesando } from "./Procesando";
-import { Procesar } from "./Procesar";
+import { Finalizado } from "../finalizado/Finalizado";
+import { Procesando } from "../procesando/Procesando";
+import { Procesar } from "../procesar/Procesar";
+
+import styles from './card.module.scss';
 
 const Card = ({color, status}) => {
 
@@ -22,7 +24,7 @@ const Card = ({color, status}) => {
     }
 
     return (
-        <div style={{ backgroundColor: color }}>
+        <div className={`${styles[color]} ${styles.card}`}>
             <span>Estado: {status}</span>
 
             {showText()}

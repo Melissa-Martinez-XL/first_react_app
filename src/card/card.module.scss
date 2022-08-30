@@ -1,0 +1,45 @@
+.red {
+    background-color: #C8D3D5;
+}
+
+.blue {
+    background-color:#A4B8C4;
+}
+
+.yellow {
+    background-color: #6E8387;
+}
+
+.cardMargin {
+    margin: 10px 5px 5px 5px;
+}
+
+.cardPadding {
+    padding: 20px;
+}
+
+.cardText {
+    font-size: 16px;
+}
+
+.cardDisplay {
+    display: inline-block;
+}
+
+.cardWidthHeight {
+    width: 300px;
+    height: 200px;
+}
+
+.cardBorder {
+    border-radius: 15px;
+}
+
+.card {
+    @extend .cardDisplay;
+    @extend .cardMargin;
+    @extend .cardPadding;
+    @extend .cardText;
+    @extend .cardWidthHeight;
+    @extend .cardBorder;
+}

@@ -1,4 +1,5 @@
 import { string, func } from 'prop-types';
+import styles from './inputElement.module.scss';
 
 const InputElement = ({value, onChange }) => {
 
@@ -8,7 +9,7 @@ const InputElement = ({value, onChange }) => {
         onChange(value);
     }
 
-    return <input type='text' name='' value={value} onChange={handleChange} placeholder='Ingrese el estado'/>;
+    return <input type='text' name='' value={value} onChange={handleChange} placeholder='Ingrese el estado al que desea ir' className={styles.inputElement}/>;
 }
 
 /*

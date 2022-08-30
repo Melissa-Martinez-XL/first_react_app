@@ -1,0 +1,52 @@
+.buttonColor {
+    background-color: #F7F2F2;
+    color: #121616;
+}
+
+.buttonPadding {
+    padding: 10px 5px;
+}
+
+.buttonWidth {
+    width: 200px;
+}
+
+.buttonBorder {
+    border: 1px solid #121616;
+    border-radius: 12px;
+
+}
+
+.buttonLetter {
+    font-size: 14px;
+}
+
+.buttonEffect {
+    transition-duration: 0.4s;
+}
+
+.buttonEffect:hover {
+    background-color: #4C4343;
+    color: #FCFAFA;
+    box-shadow: 5px 5px 5px #413939;
+}
+
+.buttonMargin {
+    margin: 10px;
+}
+
+.buttonPosition {
+    float: inline-end;
+}
+
+.button {
+    @extend .buttonColor;
+    @extend .buttonPadding;
+    @extend .buttonWidth;
+    @extend .buttonLetter;
+    @extend .buttonBorder;
+    @extend .buttonEffect;
+    @extend .buttonPadding;
+    @extend .buttonMargin;
+    @extend .buttonPosition;
+}
