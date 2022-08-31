@@ -1,7 +1,9 @@
 import { func, string, bool } from "prop-types";
 
+import styles from './button.module.scss'
+
 const Button = ({disabled, onClick, label}) => (
-    <button type="button" disabled={disabled} onClick={onClick}>{label}</button>
+    <button type="button" disabled={disabled} onClick={onClick} className={styles.button}>{label}</button>
 );
 
 /*

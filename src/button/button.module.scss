@@ -1,0 +1,51 @@
+@import 'src/colorPalette/colorPalette.module.scss';
+
+.buttonPadding {
+    padding: 10px 5px;
+}
+
+.buttonWidth {
+    width: 200px;
+}
+
+.buttonBorder {
+    border: 1px solid $blackTwo;
+    border-radius: 12px;
+
+}
+
+.buttonLetter {
+    font-size: 14px;
+}
+
+.buttonEffect {
+    transition-duration: 0.4s;
+}
+
+.buttonEffect:hover {
+    box-shadow: 5px 5px 5px $brownOne;
+}
+
+.buttonMargin {
+    margin: 10px 20px;
+}
+
+.buttonPosition {
+    float: inline-end;
+}
+
+.buttonPointer {
+    cursor: pointer;
+}
+
+.button {
+    @extend .buttonPadding;
+    @extend .buttonWidth;
+    @extend .buttonLetter;
+    @extend .buttonBorder;
+    @extend .buttonEffect;
+    @extend .buttonPadding;
+    @extend .buttonMargin;
+    @extend .buttonPosition;
+    @extend .buttonPointer;
+}

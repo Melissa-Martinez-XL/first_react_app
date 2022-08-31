@@ -1,0 +1,30 @@
+@import 'src/colorPalette/colorPalette.module.scss';
+
+.inputBorder {
+    border-radius: 15px;
+    border: 2px solid $greyThree;
+}
+
+.inputText {
+    font-size: 14px;
+}
+
+.inputPadding {
+    padding: 5px;
+}
+
+.inputWidth {
+    width: 425px;
+}
+
+.inputMargin {
+    margin: 10px;
+}
+
+.inputElement {
+    @extend .inputBorder;
+    @extend .inputText;
+    @extend .inputPadding;
+    @extend .inputWidth;
+    @extend .inputMargin;
+}

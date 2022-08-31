@@ -1,7 +1,7 @@
-import { InputElement } from "./InputElement";
+import { InputElement } from "../inputElement/InputElement";
 import { func, array } from 'prop-types';
 import { useState } from "react";
-import { Button } from './Button';
+import { Button } from '../button/Button';
 
 const UserInput = ({changeStatus, status}) => {
 

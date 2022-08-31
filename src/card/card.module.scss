@@ -1,0 +1,47 @@
+@import 'src/colorPalette/colorPalette.module.scss';
+
+.red {
+    background-color: $whiteTwo;
+}
+
+.blue {
+    background-color: $greyOne;
+}
+
+.yellow {
+    background-color: $greyTwo;
+}
+
+.cardMargin {
+    margin: 10px 5px 5px 5px;
+}
+
+.cardPadding {
+    padding: 20px;
+}
+
+.cardText {
+    font-size: 16px;
+}
+
+.cardDisplay {
+    display: inline-block;
+}
+
+.cardWidthHeight {
+    width: 400px;
+    height: 200px;
+}
+
+.cardBorder {
+    border-radius: 15px;
+}
+
+.card {
+    @extend .cardDisplay;
+    @extend .cardMargin;
+    @extend .cardPadding;
+    @extend .cardText;
+    @extend .cardWidthHeight;
+    @extend .cardBorder;
+}
