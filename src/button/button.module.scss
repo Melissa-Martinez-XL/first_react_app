@@ -1,7 +1,4 @@
-.buttonColor {
-    background-color: #F7F2F2;
-    color: #121616;
-}
+@import 'src/colorPalette/colorPalette.module.scss';
 
 .buttonPadding {
     padding: 10px 5px;
@@ -12,7 +9,7 @@
 }
 
 .buttonBorder {
-    border: 1px solid #121616;
+    border: 1px solid $blackTwo;
     border-radius: 12px;
 
 }
@@ -26,21 +23,22 @@
 }
 
 .buttonEffect:hover {
-    background-color: #4C4343;
-    color: #FCFAFA;
-    box-shadow: 5px 5px 5px #413939;
+    box-shadow: 5px 5px 5px $brownOne;
 }
 
 .buttonMargin {
-    margin: 10px;
+    margin: 10px 20px;
 }
 
 .buttonPosition {
     float: inline-end;
 }
 
+.buttonPointer {
+    cursor: pointer;
+}
+
 .button {
-    @extend .buttonColor;
     @extend .buttonPadding;
     @extend .buttonWidth;
     @extend .buttonLetter;
@@ -49,4 +47,5 @@
     @extend .buttonPadding;
     @extend .buttonMargin;
     @extend .buttonPosition;
+    @extend .buttonPointer;
 }

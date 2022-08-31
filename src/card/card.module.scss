@@ -1,13 +1,15 @@
+@import 'src/colorPalette/colorPalette.module.scss';
+
 .red {
-    background-color: #C8D3D5;
+    background-color: $whiteTwo;
 }
 
 .blue {
-    background-color:#A4B8C4;
+    background-color: $greyOne;
 }
 
 .yellow {
-    background-color: #6E8387;
+    background-color: $greyTwo;
 }
 
 .cardMargin {
@@ -27,7 +29,7 @@
 }
 
 .cardWidthHeight {
-    width: 300px;
+    width: 400px;
     height: 200px;
 }
 
